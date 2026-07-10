@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+    color: white;
+    display: flex;
+    justify-center: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 400px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    color: #818cf8;
+    font-size: 1.2rem;
+}
+
+#user-display {
+    background: #312e81;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.score-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.score-section p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.score-section h1 {
+    font-size: 3.5rem;
+    background: linear-gradient(to right, #22d3ee, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tap-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+}
+
+#tap-btn {
+    background: linear-gradient(135deg, #a855f7 0%, #6366f1 100%);
+    border: 5px solid #818cf8;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 40px rgba(99, 102, 241, 0.4);
+    transition: transform 0.05s ease;
+}
+
+#tap-btn:active {
+    transform: scale(0.95);
+}
+
+.coin {
+    font-size: 4.5rem;
+}
+
+.ai-box {
+    background: rgba(0, 0, 0, 0.4);
+    border-left: 4px solid #10b981;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #e2e8f0;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.energy-section {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.energy-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    background: #020617;
+    height: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#energy-fill {
+    background: linear-gradient(to right, #06b6d4, #6366f1);
+    width: 100%;
+    height: 100%;
+    transition: width 0.1s ease;
+}
+
+/* Floating number animation code */
+.floating-num {
+    position: absolute;
+    color: #22d3ee;
+    font-size: 1.5rem;
+    font-weight: bold;
+    animation: floatUp 0.8s ease-out forwards;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100px); opacity: 0; }
+}
