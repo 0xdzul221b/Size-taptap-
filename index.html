@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seismic Tap-to-Earn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Top Info -->
+        <div class="header">
+            <h2>⚡ SEISMIC TAP</h2>
+            <div id="user-display">Player: <span id="username">Guest</span></div>
+        </div>
+
+        <!-- Score Display -->
+        <div class="score-section">
+            <p>Total Balance</p>
+            <h1 id="balance">0</h1>
+        </div>
+
+        <!-- Main Big Tap Button -->
+        <div class="tap-area">
+            <button id="tap-btn">
+                <div class="coin">⚡</div>
+            </button>
+        </div>
+
+        <!-- AI Coach Status -->
+        <div id="ai-status" class="ai-box">
+            🤖 AI Coach: Tap the coin to start mining!
+        </div>
+
+        <!-- Energy Bar -->
+        <div class="energy-section">
+            <div class="energy-text">
+                <span>Energy</span>
+                <span id="energy-val">100/100</span>
+            </div>
+            <div class="progress-bar">
+                <div id="energy-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
